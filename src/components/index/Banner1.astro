@@ -1,0 +1,67 @@
+---
+import { Image } from "astro:assets";
+import blueLogoText from "../../assets/blue_logo_with_text.webp";
+import banner1Large from "../../assets/bg_banner_1_large.webp";
+import banner1Small from "../../assets/bg_banner_1_small.webp";
+import pinLocation from "../../assets/pin_location.svg";
+import logoBmu from "../../assets/logo_bmu.webp";
+---
+
+<div class="h-screen w-screen">
+  <div class="w-full h-fit z-50 inline-flex justify-end md:pr-10">
+    <Image
+      class="p-4 right-5 z-60 w-2/6 h-fit md:w-1/6"
+      src={blueLogoText}
+      alt="Logo Puri Asthagina."
+    />
+  </div>
+  <Image
+    class="absolute -z-10 top-0 w-full object-cover object-center h-screen invisible md:visible"
+    src={banner1Large}
+    alt="Kawasan Puri Asthagina."
+  />
+  <Image
+    class="absolute -z-10 top-0 w-full object-cover object-[40%_65%] h-screen visible md:invisible"
+    src={banner1Small}
+    alt="Kawasan Puri Asthagina."
+  />
+  <div
+    class="absolute left-5 md:left-40 md:top-20 w-fit z-90 font-['Poppins'] text-white text-shadow-sm"
+  >
+    <p
+      class="font-extrabold mb-3 md:mb-5 text-3xl md:text-4xl/snug lg:text-5xl/snug"
+    >
+      Saya Tidak Ingin<br />Kerja Selamanya!
+    </p>
+    <p class="font-extrabold text-sm md:text-base lg:text-xl">
+      Saatnya Aset yang Kerja untuk Saya
+    </p>
+    <hr class="h-0.5 w-full my-5 md:my-10 bg-white border-0 rounded-sm" />
+    <p class="font-bold text-justify text-xs lg:text-xl/snug">
+      Investasi <span class="text-yellow-300">sekali</span>, tapi <span
+        class="text-yellow-300">cuan berkali-kali<br /></span
+      > Hanya dengan investasi kos di <span class="text-yellow-300"
+        >Puri Asthagina</span
+      >
+    </p>
+    <p class="text-base mt-8 lg:text-2xl/snug inline-flex items-center">
+      <Image
+        class="h-fit w-5 md:w-7 mr-2"
+        src={pinLocation}
+        alt="Lokasi dekat dengan kampus"
+      />
+      Area Kampus<span class="text-yellow-300 mx-1">UB</span> & <span
+        class="text-yellow-300 ml-1">UMM</span
+      >
+    </p>
+    <br />
+    <div class="inline-flex align-top mt-5">
+      <p class="font-extrabold text-sm lg:text-xl">Management Kos :</p>
+      <Image
+        class="h-10 md:h-15 w-fit ml-2"
+        src={logoBmu}
+        alt="Dikelola oleh BMU"
+      />
+    </div>
+  </div>
+</div>

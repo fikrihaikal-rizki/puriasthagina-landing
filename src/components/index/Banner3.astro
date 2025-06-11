@@ -1,0 +1,43 @@
+---
+import { Image } from "astro:assets";
+import puriAndInterior from "../../assets/puri_and_interior.webp";
+import ukiran from "../../assets/ukiran_daun_1.webp";
+---
+
+<div class="h-screen w-screen flex flex-col md:flex-row">
+  <div
+    class="w-full h-full md:w-1/2 md:h-full flex items-end md:items-center justify-center md:justify-end"
+  >
+    <Image
+      class="w-11/12 h-11/12 md:w-10/12 object-cover object-bottom rounded-3xl"
+      src={puriAndInterior}
+      alt="Rumah kost Puri Asthagina."
+      decoding="async"
+      loading="lazy"
+    />
+  </div>
+  <div
+    class="w-full h-6/12 md:w-1/2 md:h-full inline-flex md:items-center relative"
+  >
+    <div
+      class="absolute w-fit z-90 font-['Poppins'] text-left py-5 pl-5 pr-10 md:pr-20"
+    >
+      <p
+        class="font-extrabold text-xl/snug md:text-3xl/snug lg:text-4xl/snug mb-1 md:mb-3 text-shadow-sm"
+      >
+        Puri <span class="text-yellow-400">Asthagina</span>
+      </p>
+      <p class="text-xs md:text-base lg:text-lg">
+        Puri Asthagina mempersembahkan Rumah Kos Premium bernuansa Jawa Terpadu.
+        Berlokasi strategis di pusat kota Malang, lingkungan yang baik, bersih
+        serta mendukung penuh dalam kegiatan belajar. Sistem keamanan 24 jam,
+        ditunjang dengan berbagai fasilitas berkelas.
+      </p>
+    </div>
+    <Image
+      class="w-1/4 md:w-2/4 aspect-square -rotate-180 absolute top-5 right-10 invisible md:visible"
+      src={ukiran}
+      alt="Rumah kost Puri Asthagina."
+    />
+  </div>
+</div>

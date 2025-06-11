@@ -1,0 +1,51 @@
+---
+import { Image } from "astro:assets";
+import banner2Large from "../../assets/bg_banner_2_large.webp";
+import banner2Small from "../../assets/bg_banner_2_small.webp";
+import frameFree from "../../assets/frame_free.webp";
+---
+
+<div class="h-screen w-screen">
+  <Image
+    class="absolute left-0 object-cover object-center h-screen invisible md:visible"
+    src={banner2Large}
+    alt="Rumah kost Puri Asthagina."
+    decoding="async"
+    loading="lazy"
+  />
+  <Image
+    class="absolute left-0 object-cover object-[20%_60%] h-screen visible md:invisible"
+    src={banner2Small}
+    alt="Rumah kost Puri Asthagina."
+    decoding="async"
+    loading="lazy"
+  />
+  <div
+    class="w-screen h-screen px-5 md:pr-5 lg:pr-10 xl:pr-20 pb-5 pt-10 flex items-end md:items-start md:justify-end"
+  >
+    <div
+      class="relative w-fit h-fit z-90 font-['Poppins'] text-white text-shadow-sm"
+    >
+      <div>
+        <p
+          class="font-extrabold mb-3 md:mb-5 text-lg/snug md:text-2xl/snug lg:text-3xl/snug"
+        >
+          Rumah Kos <span class="text-yellow-400">Jadi</span><br />
+          Langsung <span class="text-yellow-400">Siap Huni</span>
+        </p>
+        <p class="text-xs text-justify md:text-base lg:text-lg">
+          Kami membantu Anda memiliki investasi kos<br /> siap huni di lokasi strategis,
+          lengkap dengan<br /> sistem manajemen yang profesional.
+        </p>
+        <div class="mt-1 md:mt-5 w-70 inline-flex">
+          <Image class="w-full" src={frameFree} alt="Free dalam pembelian" />
+          <p class="absolute text-xs pt-13 px-3 w-70 text-justify">
+            PPN, BPHTB, BBN<br />
+            Kanopi depan & Smart Door Lock pintu utama Furniture, AC, Water Heater
+            & Exhaust fan Tandong air atas dan bawah
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,59 @@
+---
+import { Image } from "astro:assets";
+import blueLogoText from "../assets/blue_logo_with_text.webp";
+import WhatsApp from "../components/icons/WhatsApp.vue";
+import Instagram from "../components/icons/Instagram.vue";
+import Tiktok from "../components/icons/Tiktok.vue";
+import Youtube from "../components/icons/Youtube.vue";
+import ukiran from "../assets/ukiran_daun_1.webp";
+---
+
+<div
+  class="h-100 md:h-75 w-screen relative font-['Poppins'] inline-flex flex-col"
+>
+  <div class="w-full h-fit flex justify-center items-center px-10">
+    <Image
+      class="p-4 right-5 z-60 w-3/6 md:w-2/8 h-fit"
+      src={blueLogoText}
+      alt="Logo Puri Asthagina."
+    />
+  </div>
+  <div
+    class="w-full h-fit flex flex-col md:flex-row md:items-start justify-center px-10 z-100"
+  >
+    <div class="w-full md:w-1/4 h-fit flex flex-col py-5 md:items-end">
+      <p class="text-xl">Hubungi Kami</p>
+      <hr class="h-0.5 w-full my-1 bg-black border-0 rounded-sm" />
+      <p class="text-3xl font-bold text-nowrap">CP 0812 - 35 - 5758</p>
+    </div>
+    <div class="w-full md:w-1/4 h-fit"></div>
+    <div class="w-full md:w-1/4 h-fit flex flex-col py-5">
+      <p class="text-xl">Ikuti Kami</p>
+      <hr class="h-0.5 w-full md:w-2/3 my-1 bg-black border-0 rounded-sm" />
+      <div class="w-full h-fit flex flex-row">
+        <a href="https://www.instagram.com/puriasthagina.id" target="_blank"
+          ><Instagram class="w-8 aspect-square mr-4" /></a
+        >
+        <a
+          href="https://www.tiktok.com/@puriasthagina.id?_t=ZS-8x0hTttfN2o&_r=1"
+          target="_blank"><Tiktok class="w-7 aspect-square mr-4" /></a
+        >
+        <a
+          href="https://youtube.com/@puriasthagina_id?si=04RFQobCSzVDVPaO"
+          target="_blank"><Youtube class="w-10 aspect-square mr-4" /></a
+        >
+        <a
+          href="https://wa.me/62812355758?text=Hello%2C+saya+ingin+mengenal+produk+anda+lebih+jauh."
+          target="_blank"
+        >
+          <WhatsApp class="w-8 aspect-square mr-4" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <Image
+    class="w-2/4 md:w-2/10 aspect-square absolute bottom-0 left-0 invisible md:visible"
+    src={ukiran}
+    alt="Rumah kost Puri Asthagina."
+  />
+</div>

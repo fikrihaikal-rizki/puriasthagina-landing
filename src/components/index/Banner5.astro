@@ -1,0 +1,69 @@
+---
+import { Image } from "astro:assets";
+import type125 from "../../assets/type-125-1.webp";
+---
+
+<div
+  class="w-screen h-fit md:h-screen flex flex-col md:flex-row justify-start md:justify-between pb-5"
+>
+  <div
+    class="relative w-full md:w-1/2 h-fit md:h-full inline-flex justify-start md:justify-end"
+  >
+    <Image
+      class="w-11/12 h-full object-cover object-center rounded-3xl mx-2"
+      src={type125}
+      alt="Rumah kost Puri Asthagina."
+      decoding="async"
+      loading="lazy"
+    />
+    <div class="w-full h-full absolute flex flex-col">
+      <div
+        class="w-full h-9/12 md:h-fit z-90 px-10 pt-10 font-['Poppins'] text-white text-shadow-sm text-4xl font-extrabold inline-flex justify-end"
+      >
+        <p class="pr-2">Type 125</p>
+        <hr class="h-0.5 w-1/6 my-5 bg-white border-0 rounded-sm" />
+      </div>
+      <div
+        class="w-full h-1/3 md:h-4/12 z-90 font-['Poppins'] text-base md:text-xl text-shadow-sm flex flex-col"
+      >
+        <div
+          class="w-fit h-fit bg-white z-100 rounded-2xl pr-10 pl-3 py-5 shadow-2xl absolute -right-5 md:-right-45"
+        >
+          <div class="border-l-4 border-yellow-400 pl-2">
+            <p>8 Kamar Tidur</p>
+            <p>8 Kamar Mandi</p>
+            <p>Area Parkir</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="w-full h-full md:w-1/2 md:h-full flex md:items-end">
+    <div class="w-full h-full md:h-7/12 flex flex-col md:justify-center">
+      <div
+        class="w-fit z-90 font-['Poppins'] py-10 md:py-5 pl-5 pr-10 md:px-5 text-justify md:text-left"
+      >
+        <p
+          class="font-extrabold text-lg/snug md:text-2xl/snug lg:text-3xl/snug text-shadow-sm"
+        >
+          <span class="text-yellow-400">Exclusive</span> Boarding House
+          <!-- <span class="text-yellow-400 text-nowrap">Type 125</span> -->
+        </p>
+        <p
+          class="font-extrabold text-xl/snug md:text-3xl/snug lg:text-4xl/snug mb-1 md:mb-3 text-shadow-sm"
+        >
+          <!-- <span class="text-yellow-400">Exclusive</span> Boarding House  -->
+          <span class="text-yellow-400 text-nowrap">Type 125</span>
+        </p>
+        <p class="text-xs md:text-base lg:text-lg">
+          Memiliki konsep bangunan Jawa Modern, dan terdapat delapan kamar tidur
+          dengan delapan kamar mandi dalam super nyaman dan luas. Dilengkapi
+          dengan dapur bersama, balkon view pegunungan dan persawahan, hingga
+          mini garden untuk meningkatkan kualitas udara di area Rukos tetap
+          sejuk. Semua space di desain khusus untuk membuat penghuni Rukos tetap
+          nyaman dan aman.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
