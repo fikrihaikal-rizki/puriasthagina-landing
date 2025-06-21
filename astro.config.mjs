@@ -7,7 +7,7 @@ import vue from '@astrojs/vue';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://puriasthagina-landing.onrender.com/',
+  site: 'https://www.puriasthagina.id/landingmeta/',
   output: 'static',
   vite: {
     plugins: [tailwindcss()]

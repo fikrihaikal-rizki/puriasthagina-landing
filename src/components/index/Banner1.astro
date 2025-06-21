@@ -3,30 +3,46 @@ import { Image } from "astro:assets";
 import blueLogoText from "../../assets/blue_logo_with_text.webp";
 import banner1Large from "../../assets/bg_banner_1_large.webp";
 import banner1Small from "../../assets/bg_banner_1_small.webp";
-import pinLocation from "../../assets/pin_location.svg";
+import person from "../../assets/person.webp";
+import pinLocation from "../../assets/pin_location.webp";
 import logoBmu from "../../assets/logo_bmu.webp";
 ---
 
-<div class="h-screen w-screen">
+<div class="h-screen w-screen overflow-x-hidden">
   <div class="w-full h-fit z-50 inline-flex justify-end md:pr-10">
     <Image
-      class="p-4 right-5 z-60 w-2/6 h-fit md:w-1/6"
+      class="p-4 right-5 z-100 w-2/6 h-fit md:w-1/6"
       src={blueLogoText}
       alt="Logo Puri Asthagina."
+    />
+  </div>
+  <div
+    class="absolute z-100 bottom-0 right-0 h-6/12 md:h-8/12 lg:h-10/12 w-fit overflow-clip"
+  >
+    <Image
+      class="object-contain object-bottom-right w-full h-full relative -right-20 lg:right-0"
+      src={person}
+      alt="Kawasan Puri Asthagina."
+      decoding="async"
+      loading="lazy"
     />
   </div>
   <Image
     class="absolute -z-10 top-0 w-full object-cover object-center h-screen invisible md:visible"
     src={banner1Large}
     alt="Kawasan Puri Asthagina."
+    decoding="async"
+    loading="lazy"
   />
   <Image
     class="absolute -z-10 top-0 w-full object-cover object-[40%_65%] h-screen visible md:invisible"
     src={banner1Small}
     alt="Kawasan Puri Asthagina."
+    decoding="async"
+    loading="lazy"
   />
   <div
-    class="absolute left-5 md:left-40 md:top-20 w-fit z-90 font-['Poppins'] text-white text-shadow-sm"
+    class="absolute left-5 md:left-20 xl:left-40 md:top-20 w-fit z-90 font-['Poppins'] text-white text-shadow-sm"
   >
     <p
       class="font-extrabold mb-3 md:mb-5 text-3xl md:text-4xl/snug lg:text-5xl/snug"
@@ -55,10 +71,10 @@ import logoBmu from "../../assets/logo_bmu.webp";
       >
     </p>
     <br />
-    <div class="inline-flex align-top mt-5">
+    <div class="md:inline-flex align-top mt-5">
       <p class="font-extrabold text-sm lg:text-xl">Management Kos :</p>
       <Image
-        class="h-10 md:h-15 w-fit ml-2"
+        class="h-10 md:h-15 w-fit mt-2 md:mt-0 md:ml-2"
         src={logoBmu}
         alt="Dikelola oleh BMU"
       />

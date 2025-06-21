@@ -6,7 +6,7 @@
       href="https://wotsap.my.id/wa-puri-asthagina"
       target="_blank"
       rel="noreferrer noopener"
-      class="fixed bottom-4 sm:right-4 z-100 bg-[#25d366] w-5/6 h-12 sm:w-16 sm:h-16 rounded-full inline-flex items-center justify-center"
+      class="fixed bottom-4 right-4 z-100 bg-[#25d366] w-16 h-16 rounded-full inline-flex items-center justify-center"
     >
       <svg
         fill="#fff"
@@ -27,11 +27,8 @@
           d="M156.734,0C73.318,0,5.454,67.354,5.454,150.143c0,26.777,7.166,52.988,20.741,75.928L0.212,302.716 c-0.484,1.429-0.124,3.009,0.933,4.085C1.908,307.58,2.943,308,4,308c0.405,0,0.813-0.061,1.211-0.188l79.92-25.396 c21.87,11.685,46.588,17.853,71.604,17.853C240.143,300.27,308,232.923,308,150.143C308,67.354,240.143,0,156.734,0z M156.734,268.994c-23.539,0-46.338-6.797-65.936-19.657c-0.659-0.433-1.424-0.655-2.194-0.655c-0.407,0-0.815,0.062-1.212,0.188 l-40.035,12.726l12.924-38.129c0.418-1.234,0.209-2.595-0.561-3.647c-14.924-20.392-22.813-44.485-22.813-69.677 c0-65.543,53.754-118.867,119.826-118.867c66.064,0,119.812,53.324,119.812,118.867 C276.546,215.678,222.799,268.994,156.734,268.994z"
         />
       </svg>
-      <span class="text-white font-semibold font-sans sm:hidden px-4 text-2xl m-0"
-        >Hubungi kami</span
-      >
       <div
-        class="absolute z-10 top-0 left-0 w-full h-full rounded-full bg-[#25d366] invisible sm:visible animate-ping"
+        class="absolute z-10 top-0 left-0 w-full h-full rounded-full bg-[#25d366] animate-ping"
       ></div>
     </a>
   </div>

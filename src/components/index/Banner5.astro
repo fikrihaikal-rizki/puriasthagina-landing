@@ -1,6 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import type125 from "../../assets/type-125-1.webp";
+import interiorType125 from "../../assets/interior_type_125.webp";
 ---
 
 <div
@@ -10,7 +11,7 @@ import type125 from "../../assets/type-125-1.webp";
     class="relative w-full md:w-1/2 h-fit md:h-full inline-flex justify-start md:justify-end"
   >
     <Image
-      class="w-11/12 h-full object-cover object-center rounded-3xl mx-2"
+      class="w-11/12 h-full object-cover object-center rounded-xl md:rounded-3xl mx-2"
       src={type125}
       alt="Rumah kost Puri Asthagina."
       decoding="async"
@@ -38,21 +39,32 @@ import type125 from "../../assets/type-125-1.webp";
       </div>
     </div>
   </div>
-  <div class="w-full h-full md:w-1/2 md:h-full flex md:items-end">
-    <div class="w-full h-full md:h-7/12 flex flex-col md:justify-center">
+  <div class="w-full h-full md:w-1/2 md:h-full flex flex-col md:items-end">
+    <div
+      class="w-full h-50 md:h-4/12 inline-flex relative pt-5 pl-3 pr-8 md:p-0 items-start"
+    >
+      <Image
+        class="object-bottom-left object-cover h-full w-full rounded-xl md:rounded-3xl md:absolute md:-bottom-10 md:-right-30"
+        src={interiorType125}
+        alt="Rumah kost Puri Asthagina."
+        decoding="async"
+        loading="lazy"
+      />
+    </div>
+    <div
+      class="w-full h-full md:h-8/12 flex flex-col justify-start md:justify-end-safe lg:justify-center-safe"
+    >
       <div
-        class="w-fit z-90 font-['Poppins'] py-10 md:py-5 pl-5 pr-10 md:px-5 text-justify md:text-left"
+        class="w-fit z-90 font-['Poppins'] py-5 md:py-10 pl-5 pr-10 md:px-5 text-justify md:text-left"
       >
         <p
           class="font-extrabold text-lg/snug md:text-2xl/snug lg:text-3xl/snug text-shadow-sm"
         >
           <span class="text-yellow-400">Exclusive</span> Boarding House
-          <!-- <span class="text-yellow-400 text-nowrap">Type 125</span> -->
         </p>
         <p
           class="font-extrabold text-xl/snug md:text-3xl/snug lg:text-4xl/snug mb-1 md:mb-3 text-shadow-sm"
         >
-          <!-- <span class="text-yellow-400">Exclusive</span> Boarding House  -->
           <span class="text-yellow-400 text-nowrap">Type 125</span>
         </p>
         <p class="text-xs md:text-base lg:text-lg">
